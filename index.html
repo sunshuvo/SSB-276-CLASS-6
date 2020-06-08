@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="keyword" content="HTML, SSB, Sunshuvo, Md. Tarikul Islam, HTML Basic, HTML elements, Bangladesh, Web Design">
+		<meta name="author" content="Md. Tarikul Islam (SUNSHUVO)">
+		<meta name="description" content="I wrire this code as practicies as well as making the class note. If you have any queries about this code and notes please let me know. Also inform me if something you found wrong here.">
+		<title>HTML Class-6 by SSB-276</title>
+		<link rel="stylesheet" href="css/class-6.css">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<base href="" target="_blank">
+
+		<style>
+			span{
+				color: green;
+				font-style: italic;
+				font-weight: bold;
+			}
+		</style>
+
+
+	<head/>
+
+	<body>
+		<header class="header">
+			<h1 style="text-align:center;">I'm going to make some short note of Class-6 SSB-276</h1>
+		</header>
+
+		<main class="main_body">
+	
+			<div>
+				<h2>Following content is cover on this class</h2>
+				
+				<ol class="main_list">
+					<li>Block level element is called them who doesn't allow other element in the same line. We can say that the width of the block level element is 100%. For example <span>&#60;h1&#62;-&#60;h2&#62;, &#60;p&#62;, &#60;div&#62;</span>, etc.<br>
+						<p>This is a block which will not allow other element in this line</p>
+						<a href="#">This is a link</a>
+					</li><br>
+					<li>Inline element is called them who allow other element in the same line is the required space is availale. For example <span>&#60;a&#62;,&#60;img&#62;, &#60;span&#62;</span>, etc.<br>
+						<a href="#">This is a link</a>
+						<a href="#">This is another link</a>
+						<span>This is span element</span>
+					</li><br>
+					<li>Inline-Block is combination of block element and inline element. It allow other element in side, but top and bottop space of block will not release. This for user define only, no html element is defined as inline-block<br>
+						<a style="display:inline-block;" href="#">This is a link with inline-block</a>
+						<a style="display:inline-block;" href="#">This is another link with inline-block</a>
+					</li><br>
+					<li>Span Element is used to seperate a text to design seperately. For details check below table of element</li><br>
+					<li>Margin used to move a element form other element. This is some space outside of broder. Below are the example of marign properties
+						<ol>
+							<li>Margin: 10px 20px 30px 40px; (clock wise from top:10px, right:20px, bottom:30px and left:40px)</li>
+							<li>Margin: 10px 20px 30px; (top:10px, left-right:20px and bottom:30px)</li>
+							<li>Margin: 10px 40px; (top-bottom: 10px and left-right:40px)</li>
+							<li>Margin: 10px;(all side 10px margin)</li>
+						</ol>
+						Below is the example of the marign properties
+						<table>
+							<tr>
+								<th>Margin: 10px 20px 30px 40px;</th>
+								<th>Margin: 10px 20px 30px;</th>
+								<th>Margin: 10px 40px;</th>
+								<th>Margin: 10px;</th>
+							</tr>
+							<tr>
+								<td class="margin_cell"><div class="properties-1 common">This is<br>text area</div></td>
+								<td class="margin_cell"><div class="properties-2 common">This is<br>text area</div></td>
+								<td class="margin_cell"><div class="properties-3 common">This is<br>text area</div></td>
+								<td class="margin_cell"><div class="properties-4 common">This is<br>text area</div></td>
+							</tr>
+						</table>
+					</li><br>
+					<li>Padding used to free some space between border and content. The CSS writing style is same but properties is padding. Below are the example<br>
+					<table>
+							<tr>
+								<th>padding: 10px 20px 30px 40px;</th>
+								<th>padding: 10px 20px 30px;</th>
+								<th>padding: 10px 40px;</th>
+								<th>padding: 10px;</th>
+							</tr>
+							<tr>
+								<td class="margin_cell"><div class="padding-1 common">This is<br>text area</div></td>
+								<td class="margin_cell"><div class="padding-2 common">This is<br>text area</div></td>
+								<td class="margin_cell"><div class="padding-3 common">This is<br>text area</div></td>
+								<td class="margin_cell"><div class="padding-4 common">This is<br>text area</div></td>
+							</tr>
+						</table>
+					</li><br>
+					<li>Box model concept is actually descibe the model of box as structure content+padding+border+margin. Below is an example<br>
+						<img src="img/boxmodel.png">
+					</li><br>
+					<li>HTML Elements from W3Schools 
+						<table class="element-table">
+							<colgroup>
+								<col style="background-color:lightgray;">
+								<col style="background-color:lightgray;">
+								<col style="background-color:lightgray;">
+								<col style="background-color:lightgray;">
+							  </colgroup>
+							<caption>Table- Containing various HTML elements</caption>
+							<thead class="t_head">
+								<th>SL</th>
+								<th>Tag</th>
+								<th>Descriptions</th>
+								<th>Example</th>
+							</thead>
+							<tbody>
+							<tr>
+								<td>051</td>
+								<td>&#60;kbd&#62;</td>
+								<td>This tag is used to define keyboard input, which is a inline content but with predefine style of monospace font</td>
+								<td>Press <kbd>ctrl</kbd> + <kbd>c</kbd> to copy. Here "ctrl & c" put beside <span>&#60;kbd&#62;</span> tag</td>
+							</tr>
+							<tr>
+								<td>052</td>
+								<td>&#60;label&#62;</td>
+								<td>Used to define a label for input field. It will point the cursor to the respective input box. <span>for</span> attribute inside <span>label</span> must be same with <span>id</span> attribute of respective <span>input</span> tag</td>
+								<td>
+									<form>
+										<fieldset>
+											<legend>A sample form:</legend>	
+											<label for="username">Username:</label>
+											<input type="text" id="username" placeholder="Enter Username"><br>
+											<label for="password">Password:</label>
+											<input type="password" id="password" placeholder="Enter Password">
+										</fieldset>
+									</form>
+								</td>
+							</tr>
+							<tr>
+								<td>053</td>
+								<td>&#60;legend&#62;</td>
+								<td>This is used to set heading or caption for the <span>&#60;fieldset&#62;</span> of the input group</td>
+								<td>Check the upper example of the label where I define a legened</td>
+							</tr>
+							<tr>
+								<td>054</td>
+								<td>&#60;li&#62;</td>
+								<td>It used to create new list item</td>
+								<td>This is a sample list
+									<ul>
+										<li>List item-1</li>
+										<li>List item-2</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>055</td>
+								<td>&#60;link&#62;</td>
+								<td>Used to make relationship between document and external resource like stylesheet, jquery</td>
+								<td>Inspect header section of this document where I link stylesheet to a external file</td>
+							</tr>
+							<tr>
+								<td>056</td>
+								<td>&#60;main&#62;</td>
+								<td>Used to speciic the main content of the doucment. This is unique conent of the page which not contain sidebar, cpopywrite section, navbar, footer, etc.</td>
+								<td>Inspect this document at line-22</td>
+							</tr>
+							<tr>
+								<td>057</td>
+								<td>&#60;map&#62;</td>
+								<td>Used to define a image-map and mark the clickable area using <span>&#60;area&#62;</span>. Must have to define <span>usemap</span> attribute in <span>img</span> tag, which should start with #. And then <span>name</span> attribute of <span>map</span> must have same with <span>usemap</span></td>
+								<td> Place mouse on the face of this image, you will get a link to click there<br>
+									<img id="area_image" usemap="#facemask" src="img/sunshuvo.png" alt="sunshuvo">
+									<map name="facemask">
+										<area shape="circle" coords="95,50,30" href="https://www.google.com/search?q=sunshuvo">
+									</map>
+								</td>
+							</tr>
+							<tr>
+								<td>058</td>
+								<td>&#60;mark&#62;</td>
+								<td>This is used to heighlight a portion of text. By default the highlight color is yellow.</td>
+								<td>I'm going to highlight my name here <mark>Md. Tarikul Islam<mark></td>
+							</tr>
+							<tr>
+								<td>059</td>
+								<td>&#60;meta&#62;</td>
+								<td>Used define metadata information of the document like characterset ,keyword, author name, etc.</td>
+								<td>Inspect the head section of this document to check <span>&#60;meta&#62;<span> tag</td>
+							</tr>
+							<tr>
+								<td>060</td>
+								<td>&#60;meter&#62;</td>
+								<td>Used to define a scalar measurement within a known range or value. Also known as gauge.</td>
+								<td>Disk Usages, Milestone completed, etc.<br>
+									<label for="disk">Disk Usages:</label>
+									<meter id="disk" value=.69></meter><br>
+									<label for="milestone">Milestone Completed:</label>
+									<meter id="milestone" value=8 min=0 max=10></meter>
+								</td>
+							</tr>
+							<tr>
+								<td>061</td>
+								<td>&#60;nav&#62;</td>
+								<td>Used to make navigation bar, which will be out of main content and place on every page</td>
+								<td>
+									<nav class="navbar">
+										<ul>
+											<li><a href="http://sunshuvo.github.io/SSB276_cls3">Class-3</a></li>
+											<li><a href="http://sunshuvo.github.io/SSB-276-CLASS-4">Class-4</a></li>
+											<li><a href="http://sunshuvo.github.io/SSB-276-CLASS-5">Class-5</a></li>
+										</ul>
+									</nav>
+								</td>
+							</tr>
+							<tr>
+								<td>062</td>
+								<td>&#60;noscript&#62;</td>
+								<td>Define an alternative content if user disable script or not support client-side script</td>
+								<td>
+									<script>document.write("This text from Script. Stop you script support to see <noscript> content")</script>
+									<noscript>Browser doesn't support script or disable</noscript>
+								</td>
+							</tr>
+							<tr>
+								<td>063</td>
+								<td>&#60;object&#62;</td>
+								<td>Used to define a container to embed external webpage, picture meadia player or plug-in application. Its mainly used to embed bowser plug-in like java, flash, map, etc</td>
+								<td>
+									<object data="img/ice.mp4" width="100%">
+										<param name="autoplay" value="true">
+									</object>
+								</td>
+							</tr>
+							<tr>
+								<td>064</td>
+								<td>&#60;ol&#62;</td>
+								<td>Used to make ordered list</td>
+								<td>Inspect this document in main section</td>
+							</tr>
+							<tr>
+								<td>065</td>
+								<td>&#60;optgroup&#62;</td>
+								<td>This is used to make group of options in <span>&#60;select&#62; element</span></td>
+								<td>
+									<select name="select_menu">
+										<optgroup label="Kafrul">
+											<option>Kajipara</option>
+											<option>Shawrapara</option>
+											<option>Mirpur-14</option>
+										</optgroup>
+										<optgroup label="Mirpur-2">
+											<option>Monipur</option>
+											<option>Mirpur-4</option>
+											<option>Rupnagar</option>
+										</optgroup>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>066</td>
+								<td>&#60;option&#62;</td>
+								<td>Option used to create item in drop down list, which used in <span>&#60;select&#62; element</td>
+								<td>See the above example</td>
+							</tr>
+							<tr>
+								<td>067</td>
+								<td>&#60;output&#62;</td>
+								<td>Used to represent the reasult of a calculation</td>
+								<td>
+									<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+										<input type="number" id="a" value="">
+										+<input type="number" id="b"value="">
+										=<output name="x"></output>
+									</form>
+								</td>
+							</tr>
+							<tr>
+								<td>068</td>
+								<td>&#60;p&#62;</td>
+								<td>Used to deine a paragraph section</td>
+								<td>This text belongs to a <span>&#60;p&#62;</span> tag</td>
+							</tr>
+							<tr>
+								<td>069</td>
+								<td>&#60;param&#62;</td>
+								<td>Define paramter for <span>&#60;object&#62;</span>, like <span>autopaly</span></td>
+								<td>See Example of object</td>
+							</tr>
+							<tr>
+								<td>070</td>
+								<td>&#60;picture&#62;</td>
+								<td>Used to flexibale content with the device size. In <span>&#60;picture&#62;</span> element there are two element one is <span>source</span> and another <span>img</span>. Source will try first to show and then content of img will display if source failed</td>
+								<td>This image will change if device width change between 700px<br>
+									<picture>
+									<source media="(max-width:700px)" srcset="img/sunshuvo.png">
+									<img src="img/sunshuvo_large.jpg" alt="sunshuvo" width=100%>
+									</picture>
+								</td>
+							</tr>
+							<tr>
+								<td>071</td>
+								<td>&#60;pre&#62;</td>
+								<td>preformatted tag is used to display content in HTML as written as in code, like space, line brak, tab, etc. This is used to display the programming code</td>
+								<td><pre>&#60;table&#62;
+  &#60;tr&#62;
+    &#60;td&#62;&#60;/td&#62;
+    &#60;td&#62;&#60;/td&#62;
+  &#60;/tr&#62;
+&#60;/table&#62;</pre>	    	</td>
+							</tr>
+							<tr>
+								<td>072</td>
+								<td>&#60;progress&#62;</td>
+								<td>This used to show progress report simillar to the meter</td>
+								<td>
+									<label for="progress_bar">Progress status:</label>
+									<progress id="progress_bar" value=0.3></progress>
+								</td>
+							</tr>
+							<tr>
+								<td>073</td>
+								<td>&#60;q&#62;</td>
+								<td>Used to short quotation</td>
+								<td>I'm going to quotate <q>here</q></td>
+							</tr>
+							<tr>
+								<td>074</td>
+								<td>&#60;rp&#62;</td>
+								<td>Used to prodive parentheses around a ruby text, to show if browser doesn't support <span>&#60;ruby&#62;</span> annotation</td>
+								<td>see exmaple of <span>&#60;ruby&#62;</span></td>
+							</tr>
+							<tr>
+								<td>075</td>
+								<td>&#60;rt&#62;</td>
+								<td>Its define the explanation of pronunciation of characters in <span>&#60;ruby&#62;</span> annotation</td>
+								<td>see exmaple of <span>&#60;ruby&#62;</span></td>
+							</tr>
+							<tr>
+								<td>076</td>
+								<td>&#60;ruby&#62;</td>
+								<td>Used to show pronunciation or meaning of the corrosponding characters</td>
+								<td>
+									<ruby>
+										明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp>
+									</ruby>
+								</td>
+							</tr>
+							<tr>
+								<td>077</td>
+								<td>&#60;s&#62;</td>
+								<td>Used to make a mark which lo longer available</td>
+								<td>Click to check <s>offer</s></td>
+							</tr>
+							<tr>
+								<td>078</td>
+								<td>&#60;samp&#62;</td>
+								<td>This is used show sample output for computer program. By default it show as omnospace font as like <span>&#60;kbd&#62;</span></td>
+								<td><samp>There are no such file. Try again</samp></td>
+							</tr>
+							<tr>
+								<td>079</td>
+								<td>&#60;script&#62;</td>
+								<td>Used to define client side script</td>
+								<td><script>document.write("This text is written by script")</script></td>
+							</tr>
+							<tr>
+								<td>080</td>
+								<td>&#60;section&#62;</td>
+								<td>Used to define a sperate block or section in document.</td>
+								<td>Check footer in this document</td>
+							</tr>
+							<tr>
+								<td>081</td>
+								<td>&#60;select&#62;</td>
+								<td>Used to create drop-down menu</td>
+								<td>See example of <span>&#60;optgroup&#62;</span></td>
+							</tr>
+							<tr>
+								<td>082</td>
+								<td>&#60;small&#62;</td>
+								<td>Used make text smaller for copywrite, side note, etc.</td>
+								<td>This is main content. <small>(This is smaller text for note)</small></td>
+							</tr>
+							<tr>
+								<td>083</td>
+								<td>&#60;source&#62;</td>
+								<td>Used in <span>&#60;picture&#62;</span>, <span>&#60;video&#62;</span>, <span>&#60;audio&#62;</span> tag to specifly multiple format external resource</td>
+								<td>
+									<audio controls>
+										<source src="audio/Amar_Shonar_Bangla_instrumental.ogg" type="audio/ogg">
+										<source src="audio/Amar_Shonar_Bangla_instrumental.mp3" type="audio/mp3">
+										<source src="audio/Amar_Shonar_Bangla_instrumental.amr" type="audio/amr">
+										Your browser doesn't support OGG, MP3, AMR.
+									</audio>
+								</td>
+							</tr>
+							<tr>
+								<td>084</td>
+								<td>&#60;span&#62;</td>
+								<td>Define a as section for a small portion of text.</td>
+								<td>In this document all green colored with italic font are in <span>&#60;span&#62;</span> element</td>
+							</tr>
+							<tr>
+								<td>085</td>
+								<td>&#60;strong&#62;</td>
+								<td>Strong sued to make font bold.</td>
+								<td>In this line <strong>blod</strong> is in <span>&#60;strong&#62;</span> elemment</td>
+							</tr>
+							<tr>
+								<td>086</td>
+								<td>&#60;style&#62;</td>
+								<td>It used to define stylesheet on the same document</td>
+								<td>Inspect this document in head section to see example</td>
+							</tr>
+							<tr>
+								<td>087</td>
+								<td>&#60;sub&#62;</td>
+								<td>Used to subscripted some text</td>
+								<td><sub>Example</sub> is Subscripted</td>
+							</tr>
+							<tr>
+								<td>088</td>
+								<td>&#60;summary&#62;</td>
+								<td>It is the visible element for <span>&#60;details&#62;</span> element. Mean whatever showing after hide content that is set in <span>&#60;summary&#62;</span></td>
+								<td>
+									<details>
+										<summary>Summary: Click to expand</summary>
+										This is decripotion area for the above summary
+									</details>
+								</td>
+							</tr>
+							<tr>
+								<td>089</td>
+								<td>&#60;sup&#62;</td>
+								<td>Used to supersctipted some text</td>
+								<td>Here <sup>example</sup> is Superscripted</td>
+							</tr>
+							<tr>
+								<td>090</td>
+								<td>&#60;svg&#62;</td>
+								<td>Define a container for SVG graphics</td>
+								<td>
+									<svg width=100% height="50">
+										<circle cx="25" cy="25" r="20" stroke="green" stroke-width="4" fill="none"/>
+									</svg>
+								</td>
+							</tr>
+							<tr>
+								<td>091</td>
+								<td>&#60;table&#62;</td>
+								<td>Used to create a table</td>
+								<td>Inspect this table to see example</td>
+							</tr>
+							<tr>
+								<td>092</td>
+								<td>&#60;tbody&#62;</td>
+								<td>Used to group the main body element of the table, after <span>&#60;thead&#62;</span> and before <span>&#60;tfoot&#62;</span></td>
+								<td>Inspect this table</td>
+							</tr>
+							<tr>
+								<td>093</td>
+								<td>&#60;td&#62;</td>
+								<td>Used to create cell in table</td>
+								<td>Inspect this table</td>
+							</tr>
+							<tr>
+								<td>094</td>
+								<td>&#60;template&#62;</td>
+								<td>It used to define a contained which will be hide from the user and can be display later with javascript</td>
+								<td>See example <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_template">here</a></td>
+							</tr>
+							<tr>
+								<td>095</td>
+								<td>&#60;textarea&#62;</td>
+								<td>It used to collect descriptive information from user, which normally allow a long text</td>
+								<td>
+									<label for="textarea">Input your life story:</label><br>
+									<textarea id="textarea" name="textarea">Sample Text</textarea>
+								</td>
+							</tr>
+							<tr>
+								<td>096</td>
+								<td>&#60;tfoot&#62;</td>
+								<td>Used to define footer row of the table, usefull in calculation table for summary result</td>
+								<td>Inspect this table</td>
+							</tr>
+							<tr>
+								<td>097</td>
+								<td>&#60;th&#62;</td>
+								<td>Used to created header cell with some predefine style</td>
+								<td>Inspect this document</td>
+							</tr>
+							<tr>
+								<td>098</td>
+								<td>&#60;thead&#62;</td>
+								<td>Used to define header section of the table.</td>
+								<td>Inspect this document</td>
+							</tr>
+							<tr>
+								<td>099</td>
+								<td>&#60;time&#62;</td>
+								<td>Used to define time</td>
+								<td>I will be there are at <time>12:00</time></td>
+							</tr>
+							<tr>
+								<td>100</td>
+								<td>&#60;title&#62;</td>
+								<td>Used to define the document title, which will show on browser tab</td>
+								<td>Inspect this document at header section</td>
+							</tr>
+							<tr>
+								<td>101</td>
+								<td>&#60;tr&#62;</td>
+								<td>Used to create row in table</td>
+								<td>Inspect this document</td>
+							</tr>
+							<tr>
+								<td>102</td>
+								<td>&#60;track&#62;</td>
+								<td>This is used to show subtitle for <span>&#60;audio&#62;</span> or <span>&#60;video&#62;</span> element</td>
+								<td><a href="https://www.w3schools.com/tags/tag_track.asp">Click here</a> to see</td>
+							</tr>
+							<tr>
+								<td>103</td>
+								<td>&#60;u&#62;</td>
+								<td>Used to underline some text to differentiate from other</td>
+								<td>Here <u>Underline</u> is make using this tag</td>
+							</tr>
+							<tr>
+								<td>104</td>
+								<td>&#60;ul&#62;</td>
+								<td>Used to create unordred list</td>
+								<td> This is a unodred list where are no sequence
+									<ul>
+										<li>List Item-1</li>
+										<li>List Item-2</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>105</td>
+								<td>&#60;var&#62;</td>
+								<td>Dedine a variable for mathmatics or programming. Normally show as italic font</td>
+								<td>Equation: <var>f</var>=<var>ma</var></td>
+							</tr>
+							<tr>
+								<td>106</td>
+								<td>&#60;video&#62;</td>
+								<td>Define a content that will contain video as like <span>&#60;audio&#62;</span> tag</td>
+								<td>
+									<video controls width="50%">
+										<source src="img/ice.mp4">
+									</video>
+								</td>
+							</tr>
+							<tr>
+								<td>107</td>
+								<td>&#60;wbr&#62;</td>
+								<td>Its mean Word Break Opportunity, used to break in specifica area when screen size change. Mean controll the word break portion</td>
+								<td>This is a summary text, to eheck the wrb. It will be long text,<wbr> we will control the word break area.</td>
+							</tr>
+							</tbody>
+							<tfoot>
+							<tr>
+								<td>End</td>
+								<td>End</td>
+								<td>End using <span>&#60;tfoot&#62;</span></td>
+								<td>End</td>
+							</tr>
+							</tfoot>
+						</table>
+					</li><br>
+					<li>List of semantic, non-semantic, inline and block level element
+						<table class="semantic">
+							<tr>
+								<th style="width:25%;">Semantic Element</th>
+								<th style="width:25%;">Non-Semantic Element</th>
+								<th style="width:25%;">Inline Element</th>
+								<th style="width:25%;">Block Element</th>
+							</tr>
+							<tr>
+								<td>
+									<ol>
+										<li><span>&#60;article&#62;</span></li>
+										<li><span>&#60;aside&#62;</span></li>
+										<li><span>&#60;audio&#62;</span></li>
+										<li><span>&#60;details&#62;</span></li>
+										<li><span>&#60;figcaption&#62;</span></li>
+										<li><span>&#60;figure&#62;</span></li>
+										<li><span>&#60;footer&#62;</span></li>
+										<li><span>&#60;form&#62;</span></li>
+										<li><span>&#60;header&#62;</span></li>
+										<li><span>&#60;main&#62;</span></li>
+										<li><span>&#60;mark&#62;</span></li>
+										<li><span>&#60;nav&#62;</span></li>
+										<li><span>&#60;section&#62;</span></li>
+										<li><span>&#60;summary&#62;</span></li>
+										<li><span>&#60;table&#62;</span></li>
+										<li><span>&#60;time&#62;</span></li>
+										<li><span>&#60;video&#62;</span></li>
+									</ol>
+								</td>
+								<td>
+									<ol>
+										<li><span>&#60;div&#62;</span></li>
+										<li><span>&#60;span&#62;</span></li>
+									</ol>
+								</td>
+								<td>
+									<ol>
+										<li><span>&#60;a&#62;</span></li>
+										<li><span>&#60;abbr&#62;</span></li>
+										<li><span>&#60;acronym&#62;</span></li>
+										<li><span>&#60;b&#62;</span></li>
+										<li><span>&#60;bdo&#62;</span></li>
+										<li><span>&#60;big&#62;</span></li>
+										<li><span>&#60;br&#62;</span></li>
+										<li><span>&#60;button&#62;</span></li>
+										<li><span>&#60;cite&#62;</span></li>
+										<li><span>&#60;code&#62;</span></li>
+										<li><span>&#60;dfn&#62;</span></li>
+										<li><span>&#60;em&#62;</span></li>
+										<li><span>&#60;i&#62;</span></li>
+										<li><span>&#60;img&#62;</span></li>
+										<li><span>&#60;input&#62;</span></li>
+										<li><span>&#60;kbd&#62;</span></li>
+										<li><span>&#60;label&#62;</span></li>
+										<li><span>&#60;map&#62;</span></li>
+										<li><span>&#60;object&#62;</span></li>
+										<li><span>&#60;output&#62;</span></li>
+										<li><span>&#60;q&#62;</span></li>
+										<li><span>&#60;samp&#62;</span></li>
+										<li><span>&#60;script&#62;</span></li>
+										<li><span>&#60;select&#62;</span></li>
+										<li><span>&#60;small&#62;</span></li>
+										<li><span>&#60;span&#62;</span></li>
+										<li><span>&#60;strong&#62;</span></li>
+										<li><span>&#60;sub&#62;</span></li>
+										<li><span>&#60;sup&#62;</span></li>
+										<li><span>&#60;textarea&#62;</span></li>
+										<li><span>&#60;time&#62;</span></li>
+										<li><span>&#60;tt&#62;</span></li>
+										<li><span>&#60;var&#62;</span></li>
+									</ol>
+								</td>
+								<td>
+									<ol>
+										<li><span>&#60;address&#62;</span></li>
+										<li><span>&#60;article&#62;</span></li>
+										<li><span>&#60;aside&#62;</span></li>
+										<li><span>&#60;blockquote&#62;</span></li>
+										<li><span>&#60;canvas&#62;</span></li>
+										<li><span>&#60;dd&#62;</span></li>
+										<li><span>&#60;div&#62;</span></li>
+										<li><span>&#60;dl&#62;</span></li>
+										<li><span>&#60;dt&#62;</span></li>
+										<li><span>&#60;fieldset&#62;</span></li>
+										<li><span>&#60;figcaption&#62;</span></li>
+										<li><span>&#60;figure&#62;</span></li>
+										<li><span>&#60;footer&#62;</span></li>
+										<li><span>&#60;form&#62;</span></li>
+										<li><span>&#60;h1&#62;-&#60;h6&#62;</span></li>
+										<li><span>&#60;header&#62;</span></li>
+										<li><span>&#60;hr&#62;</span></li>
+										<li><span>&#60;main&#62;</span></li>
+										<li><span>&#60;nav&#62;</span></li>
+										<li><span>&#60;noscript&#62;</span></li>
+										<li><span>&#60;ol&#62;</span></li>
+										<li><span>&#60;p&#62;</span></li>
+										<li><span>&#60;pre&#62;</span></li>
+										<li><span>&#60;section&#62;</span></li>
+										<li><span>&#60;table&#62;</span></li>
+										<li><span>&#60;tfoot&#62;</span></li>
+										<li><span>&#60;ul&#62;</span></li>
+										<li><span>&#60;video&#62;</span></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li><br>
+				</ol>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<hr>
+			<section>
+				<article  style="text-align:center;">
+				<p>Here is the end of the class-6. I wrire this code as practicies as well as making the class note. If you have any queries about this code and notes please let me know. Also inform me if something you found wrong here.
+				<br>Thank you,
+				<br><cite>Md. Tarikul Islam (SUNSHUVO)</cite></p>
+				</article>
+			</section>
+			<address style="text-align:center;">
+			Home: 340/6, East Kajipara, Mirpur, Dhaka.
+			Phone: 01722589181.
+			Email: sunshuvo@gmail.com
+			</address>
+		</footer>
+
+	<body/>
+</html>

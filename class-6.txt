@@ -1,0 +1,29 @@
+1. block level element: <h1>-<h2>,<p>,<div>, who doesnot allow other element in the same line.
+
+2. inline element: <a>, <img>, <span> who allow other element in same line if space available
+
+3. inline-block: user define, not defined in any element. both characteristic will show, free line after its content but area top and bottom will not free.
+
+4. Span: used to seperate text to design separately 
+
+5. semantic markup: header, article, aside, nav, section, footer. Which give a idea by name about the content.
+
+6. Margin: used to move from another content. extra space outsde of border line
+	Marig: 10px // 10px top, 10px bottom, 10px left, 10px right
+	Marig: 10px 20px // top-bottom, left-right
+	Marig: 10px 20px 30px // top, left-right, bottom
+	Marig: 10px 20px 30px 40px// top, right, bottom, left
+	
+7. padding: Used to make space in self content before border. extra space inside of border line
+
+8. box model concept: content+padding+border+margin
+
+
+
+
+
+
+
+
+
+HW: list of inline and block level, list of symentic and non-symentic markup, next 50 elements from 23 school 
